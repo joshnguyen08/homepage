@@ -1,0 +1,131 @@
+.heading {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: -50px;
+    width: 300px;
+    margin-left: 50px;
+
+}
+body {
+    border: #1F2937 5px solid;
+    margin: 0;
+}
+.heem {
+    font-size: 30px;
+    font-weight: bolder;
+}
+.grouplinks {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    align-items: center;   
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+.belowheader {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-shrink: 0;
+}
+.pic {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+
+.body {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.subtitles {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 25px;
+}
+.quote {
+    justify-content: center;
+    display: flex;
+    margin-top: 150px;
+}
+.author {
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+}
+.signup {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin-left: 25px;
+}
+.signupbox {
+    display: flex;
+    margin-top: 100px;
+    border: 5px solid black;
+    background-color: #3882f6 ;
+}
+.button {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+}
+.border {
+    display: flex;
+    justify-content: center;
+}
+.header,
+.belowheader {
+    background-color:#1F2937;
+    color: #f9faf8;
+    font-weight: bolder;
+}
+
+button {
+    background-color: #3882f6;
+    border: 2px black solid;
+    margin-right: 25px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -50px;
+    background-color: #1F2937;
+    font-weight: bold;
+    color: #f9faf8;
+    margin: 0;
+}
+
