@@ -6,6 +6,12 @@
     margin-left: 50px;
 
 }
+.indent-text {
+    padding-left: 20px;
+}
+.list{
+    list-style:none;
+}
 body {
     border: #1F2937 5px solid;
     margin: 0;
