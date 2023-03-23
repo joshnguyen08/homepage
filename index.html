@@ -30,20 +30,20 @@
     <div class="box">
     
     </div>
-    <div class="blog">
-        <h3>Blog</h3>
-        <p>Welcome to the blog section of Josh's website. Here you will find articles and posts about Josh's experiences and thoughts.</p>
-        <div class="blog-post">
-            <h4>Blog Post Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis finibus ante, in lobortis lacus. Sed eget urna urna. Aliquam erat volutpat.</p>
+    <div class="poem">
+        <h3>Poem</h3>
+        <p>Welcome to the poem section of Josh's website.</p>
+        <div class="poem-post">
+            <h4 class="open-poem-btn">Burden</h4>
+            <p>Burden of Want</p>
         </div>
-        <div class="blog-post">
-            <h4>Blog Post Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis finibus ante, in lobortis lacus. Sed eget urna urna. Aliquam erat volutpat.</p>
+        <div class="poem-post">
+            <h4 class="open-poem-btn">Fight</h4>
+            <p>How much is it to you?</p>
         </div>
-        <div class="blog-post">
-            <h4>Blog Post Title</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas iaculis finibus ante, in lobortis lacus. Sed eget urna urna. Aliquam erat volutpat.</p>
+        <div class="poem-post">
+            <h4 class="open-poem-btn">Poem Title</h4>
+            <p>A short description of the poem goes here.</p>
         </div>
     </div>
     <div class="quote">
@@ -68,5 +68,47 @@
     <div class="footer">
         <p>Copyright C The Josh Project</p>
     </div>
+    <div id="poem-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h4 id="modal-poem-title">Burden</h4>
+            <p id="modal-poem-text">Everybody wants the same things.Those who have them, deserve them.They suffered the burden of wanting them more than everybody else.</p>
+        </div>
+    </div>
+    <script>
+        var modal = document.getElementById("poem-modal");
+        var openBtns = document.getElementsByClassName("open-poem-btn");
+        var closeBtn = document.getElementsByClassName("close-btn")[0];
+    
+        for (var i = 0; i < openBtns.length; i++) {
+            openBtns[i].onclick = function () {
+                var poemTitle = this.innerHTML;
+                var poemText;
+    
+                if (poemTitle === 'Burden') {
+                    poemText = "Everybody wants the same things. Those who have them, deserve them. They suffered the burden of wanting them more than everybody else.";
+                } else if (poemTitle == 'Fight') {
+                    poemText = "You’re not thankful for something if you won’t fight to keep it.From your 6pack to your girlfriend.Fighting to maintain and retain, fighting to gain or obtain.THAT shows genuine appreciation. You may have your health now but I promise you, if you do not fight for her she will leave you.Along with your money and girlfriend and the love of your children.This is the reality of life as a man.If you're a man of any value at all you will be overworked and underappreciated. You will finish the day tired and dirty, prepared to do the same thing again tomorrow.What's the alternative?To quit?Quitting is a luxury reserved for those whose family does not depend.The traditional man of the household is not afforded such luxury. And the temporary satisfaction of quitting is outweighed by the eternal suffering of FAILING.";
+                }
+                else {
+                    poemText = "The full text of the poem with title '" + poemTitle + "' goes here.";
+                }
+    
+                document.getElementById("modal-poem-title").innerHTML = poemTitle;
+                document.getElementById("modal-poem-text").innerHTML = poemText;
+                modal.style.display = "block";
+            };
+        }
+    
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+    
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
 </body>
 </html>
