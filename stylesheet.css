@@ -38,6 +38,8 @@ body {
 .title {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 200px;
 }
 .belowheader {
@@ -54,16 +56,7 @@ body {
     font-weight: bolder;
     background-color: darkslategray;
 }
-.pic {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    border: 5px solid black;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
 
-}
 
 .body {
     margin-top: 80px;
@@ -226,4 +219,15 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.experience {
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.centered-paragraph {
+    max-width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
