@@ -222,7 +222,8 @@ button {
 }
 .experience {
     padding-left: 20px;
-    margin-left: 10px;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
 }
 
 .centered-paragraph {
