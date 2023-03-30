@@ -232,17 +232,19 @@ button {
     margin-right: auto;
     text-align: center;
 }
-.econ-calendar {
+.econ-events-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin-top: 50px;
+    width: 100%;
 }
 
-.econ-event {
-    background-color: #e5e7eb;
-    box-shadow: 2px 2px 2px #1F2937;
-    padding: 20px;
-    margin-bottom: 10px;
-    width: 500px;
+@media (max-width: 768px) {
+    .econ-events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.ecoTitle {
+ margin-left: 250px;
 }
